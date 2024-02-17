@@ -45,13 +45,21 @@ function CardSections() {
   return (
     <div className="flex justify-evenly gap-10 mt-10 mx-2 ">
       <div>
-        <Card icon={"x"} title={"AI Cover Leter Generator"} content={"1"} />
+        <Card
+          icon={"AI ICON"}
+          title={"AI Cover Leter Generator"}
+          content={"1"}
+        />
       </div>
       <div>
-        <Card icon={"x"} title={"Smart Personalization"} content={"2"} />
+        <Card
+          icon={"Smart Icon"}
+          title={"Smart Personalization"}
+          content={"2"}
+        />
       </div>
       <div>
-        <Card icon={"x"} title={"Resume Scanner"} content={"3"} />
+        <Card icon={"Scanner Icon"} title={"Resume Scanner"} content={"xxx"} />
       </div>
     </div>
   );
@@ -60,10 +68,10 @@ function CardSections() {
 function Card({ icon, title, content }) {
   return (
     <div className="card w-96 bg-neutral text-neutral-content ">
-      <div className="card-body items-left">
+      <div className="card-body text-left">
         <h2 className="card-title">{icon}</h2>
         <p className="font-bold">{title}</p>
-        <div className="items-left">
+        <div className="card-actions">
           <p>{content}</p>
         </div>
       </div>
@@ -100,7 +108,7 @@ function Navbar() {
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="http:loremw3.org/2000/svg"
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
@@ -119,21 +127,16 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a>AI Cover Leter Generator</a>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>Smart Personalization</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Resume Scanner</a>
+            </li>
+            <li>
+              <a>Pricing</a>
             </li>
           </ul>
         </div>
@@ -142,28 +145,22 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a>AI Cover Leter Generator</a>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <a>Smart Personalization</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Resume Scanner</a>
+          </li>
+          <li>
+            <a>Pricing</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn btn-success">Button</a>
+      <div className="navbar-end gap-2">
+        <a className="btn btn-neutral">Sign in</a>
+        <a className="btn btn-success">Get Started</a>
       </div>
     </div>
   );
