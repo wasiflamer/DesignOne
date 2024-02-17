@@ -7,7 +7,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <SecondaryHero />
-      <HeroSection />
+      <DetailedHero />
+      <ContrastHero />
     </>
   );
 }
@@ -21,7 +22,7 @@ function HeroSection() {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-lg">
-            <h1 className="text-5xl font-bold text-success">
+            <h1 className="text-5xl font-bold text-green-500">
               Win your dream job
             </h1>
             <h1 className="text-5xl font-bold">with JobSnap</h1>
@@ -82,7 +83,7 @@ function Card({ icon, title, content }) {
 function SecondaryHero() {
   return (
     <div className="m-10 ">
-      <div className="hero min-h-screen bg-success rounded-lg">
+      <div className="hero min-h-screen bg-green-500 rounded-lg">
         <div className="hero-content text-center">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold text-black">
@@ -165,3 +166,163 @@ function Navbar() {
     </div>
   );
 }
+
+function DetailedHero() {
+  return (
+    <>
+      <div className="p-20">
+        <div className="hero min-h-screen ">
+          <div className="hero-content text-center">
+            <div className="max-w-lg">
+              <h1 className="text-5xl font-bold text-green-500">
+                Spend Less Time
+              </h1>
+              <h1 className="text-5xl font-bold">Looking For work</h1>
+              <p className="py-6 font-medium">
+                We Will Help You Through The Hardest Part of Job Search
+              </p>
+              <button className="btn btn-wide btn-success">
+                Create an Account
+              </button>
+              <CardSections_row2 />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function CardSections_row2() {
+  return (
+    <>
+      <div className="flex justify-evenly gap-10 mt-10 mx-2 ">
+        <div>
+          <Card
+            icon={"AI ICON"}
+            title={"AI Cover Leter Generator"}
+            content={"1"}
+          />
+        </div>
+        <div>
+          <Card
+            icon={"Smart Icon"}
+            title={"Smart Personalization"}
+            content={"2"}
+          />
+        </div>
+        <div>
+          <Card
+            icon={"AI ICON"}
+            title={"AI Cover Leter Generator"}
+            content={"1"}
+          />
+        </div>
+      </div>
+      <div className="flex justify-evenly gap-10 mt-10 mx-2 ">
+        <div>
+          <Card
+            icon={"AI ICON"}
+            title={"AI Cover Leter Generator"}
+            content={"1"}
+          />
+        </div>
+        <div>
+          <Card
+            icon={"Smart Icon"}
+            title={"Smart Personalization"}
+            content={"2"}
+          />
+        </div>
+        <div>
+          <Card
+            icon={"AI ICON"}
+            title={"AI Cover Leter Generator"}
+            content={"1"}
+          />
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ContrastHero() {
+  return (
+    <>
+      <div className="text-gray-900">
+        <div className="hero min-h-screen bg-green-500">
+          <div className="hero-content flex-col lg:flex-row-reverse m-32">
+            <img
+              src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+              className="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <h1 className="text-5xl font-bold">Box Office News!</h1>
+              <p className="py-6">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button className="btn btn-outline btn-wide text-black ">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="hero min-h-screen bg-green-500">
+          <div className="hero-content flex-col lg:flex-row m-32">
+            <img
+              src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+              className="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <h1 className="text-5xl font-bold text-right ">
+                Box Office News!
+              </h1>
+              <p className="py-6 text-right">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <div className="flex justify-end">
+                <div>
+                  <button className="btn btn-outline btn-wide text-black ">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+// function ContrastHero() {
+//   return (
+//     <>
+//       <div className="hero min-h-20  bg-green-500 border-y-8">
+//         <div className="hero-content flex-col lg:flex-row-reverse m-44">
+//           <img
+//             src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+//             className="max-w-sm rounded-lg shadow-2xl"
+//           />
+//           <div>
+//             <h1 className="text-5xl font-bold text-black">
+//               Fee AI Cover Letter Generator Powerd by GPT
+//             </h1>
+//             <p className="py-6 text-black">
+//               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+//               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+//               et a id nisi.
+//             </p>
+//             <button className="btn btn-outline text-black hover:bg-black hover:text-white">
+//               Try For Free Now
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
