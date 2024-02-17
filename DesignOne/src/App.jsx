@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./App.css";
 
 function App() {
@@ -29,9 +30,40 @@ function HeroSection() {
               <input type="text" className="grow" placeholder="Your Email" />
               <span className=" btn btn-success">Start For Free</span>
             </label>
+            <CardSections />
           </div>
         </div>
       </div>
     </>
+  );
+}
+
+function CardSections() {
+  return (
+    <div className="flex justify-evenly gap-10 mt-10 mx-2 ">
+      <div>
+        <Card icon={"x"} title={"AI Cover Leter Generator"} content={"1"} />
+      </div>
+      <div>
+        <Card icon={"x"} title={"Smart Personalization"} content={"2"} />
+      </div>
+      <div>
+        <Card icon={"x"} title={"Resume Scanner"} content={"3"} />
+      </div>
+    </div>
+  );
+}
+
+function Card({ icon, title, content }) {
+  return (
+    <div className="card w-96 bg-neutral text-neutral-content ">
+      <div className="card-body items-left">
+        <h2 className="card-title">{icon}</h2>
+        <p className="font-bold">{title}</p>
+        <div className="items-left">
+          <p>{content}</p>
+        </div>
+      </div>
+    </div>
   );
 }
