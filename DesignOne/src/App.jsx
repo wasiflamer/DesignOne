@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <SecondaryHero />
+      <HeroSection />
     </>
   );
 }
@@ -136,7 +137,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Logo</a>
+        <a className="btn btn-ghost text-xl">JobSnap</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
