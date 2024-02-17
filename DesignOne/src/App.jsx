@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <HeroSection />
+      <SecondaryHero />
     </>
   );
 }
@@ -62,6 +63,28 @@ function Card({ icon, title, content }) {
         <p className="font-bold">{title}</p>
         <div className="items-left">
           <p>{content}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SecondaryHero() {
+  return (
+    <div className="m-10 ">
+      <div className="hero min-h-screen bg-success rounded-lg">
+        <div className="hero-content text-center">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-bold text-black">
+              Submiting Better Job Applications
+            </h1>
+            <h1 className="text-9xl font-bold text-black">10X Faster</h1>
+            <p className="py-6 text-black">
+              AI Cover letter Generator, Resume keyword checker, outreach
+              Message writer and more powered by GPT.
+            </p>
+            <button className="btn ">Image Here</button>
+          </div>
         </div>
       </div>
     </div>
