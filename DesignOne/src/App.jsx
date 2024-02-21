@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 
+import reactLogo from "./assets/Dark _analytics-bro.svg";
+
 function App() {
   return (
     <>
@@ -9,6 +11,7 @@ function App() {
       <SecondaryHero />
       <DetailedHero />
       <ContrastHero />
+      <img src={reactLogo} alt="" />
     </>
   );
 }
@@ -271,13 +274,12 @@ function ContrastHero() {
         </div>
         <div className="hero min-h-screen bg-green-500">
           <div className="hero-content flex-col lg:flex-row m-32">
-            <img
-              src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
+            <a href="https://storyset.com/data">
+              Data illustrations by Storyset
+            </a>
             <div>
               <h1 className="text-5xl font-bold text-right ">
-                Box Office News!
+                Generate Letter
               </h1>
               <p className="py-6 text-right">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
@@ -287,7 +289,7 @@ function ContrastHero() {
               <div className="flex justify-end">
                 <div>
                   <button className="btn btn-outline btn-wide text-black ">
-                    Get Started
+                    Optimize Resume
                   </button>
                 </div>
               </div>
@@ -298,31 +300,3 @@ function ContrastHero() {
     </>
   );
 }
-
-// function ContrastHero() {
-//   return (
-//     <>
-//       <div className="hero min-h-20  bg-green-500 border-y-8">
-//         <div className="hero-content flex-col lg:flex-row-reverse m-44">
-//           <img
-//             src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-//             className="max-w-sm rounded-lg shadow-2xl"
-//           />
-//           <div>
-//             <h1 className="text-5xl font-bold text-black">
-//               Fee AI Cover Letter Generator Powerd by GPT
-//             </h1>
-//             <p className="py-6 text-black">
-//               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-//               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-//               et a id nisi.
-//             </p>
-//             <button className="btn btn-outline text-black hover:bg-black hover:text-white">
-//               Try For Free Now
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
