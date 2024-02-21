@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 
-import reactLogo from "./assets/Dark _analytics-bro.svg";
+import contrast_svg1 from "./assets/Analysis-amico.svg";
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
       <SecondaryHero />
       <DetailedHero />
       <ContrastHero />
-      <img src={reactLogo} alt="" />
     </>
   );
 }
@@ -255,10 +254,7 @@ function ContrastHero() {
       <div className="text-gray-900">
         <div className="hero min-h-screen bg-green-500">
           <div className="hero-content flex-col lg:flex-row-reverse m-32">
-            <img
-              src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
+            <img src={contrast_svg1} alt="Analytics" className="w-3/4" />
             <div>
               <h1 className="text-5xl font-bold">Box Office News!</h1>
               <p className="py-6">
@@ -274,9 +270,7 @@ function ContrastHero() {
         </div>
         <div className="hero min-h-screen bg-green-500">
           <div className="hero-content flex-col lg:flex-row m-32">
-            <a href="https://storyset.com/data">
-              Data illustrations by Storyset
-            </a>
+            <img src={contrast_svg1} alt="Analytics" className="w-3/4" />
             <div>
               <h1 className="text-5xl font-bold text-right ">
                 Generate Letter
