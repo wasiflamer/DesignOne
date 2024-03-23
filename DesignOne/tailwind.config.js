@@ -20,7 +20,6 @@ export default {
           // ..cyan one
 
           // little dim for buttons
-
           "base-100": "#ffffff",
         },
       },

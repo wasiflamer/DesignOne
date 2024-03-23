@@ -157,27 +157,29 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">JobSnap</a>
+        <a className="btn btn-ghost text-xl text-neutral hover:bg-primary hover:text-secondary">
+          JobSnap
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
+        <ul className="menu menu-horizontal px-1 ">
+          <li className="text-md text-neutral hover:bg-primary hover:text-secondary rounded-md">
             <a>AI Cover Leter Generator</a>
           </li>
-          <li>
+          <li className="text-md text-neutral hover:bg-primary hover:text-secondary rounded-md">
             <a>Smart Personalization</a>
           </li>
-          <li>
+          <li className="text-md text-neutral hover:bg-primary hover:text-secondary rounded-md">
             <a>Resume Scanner</a>
           </li>
-          <li>
+          <li className="text-md text-neutral hover:bg-primary hover:text-secondary rounded-md">
             <a>Pricing</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end gap-2">
-        <a className="btn btn-white">Sign in</a>
-        <a className="btn btn-accent">Get Started</a>
+        <a className="btn btn-white text-neutral">Sign in</a>
+        <a className="btn btn-accent text-neutral">Get Started</a>
       </div>
     </div>
   );
@@ -190,14 +192,16 @@ function DetailedHero() {
         <div className="hero min-h-screen ">
           <div className="hero-content text-center">
             <div className="max-w-lg">
-              <h1 className="text-5xl font-bold text-green-500">
+              <h1 className="text-5xl font-bold text-primary">
                 Spend Less Time
               </h1>
-              <h1 className="text-5xl font-bold">Looking For work</h1>
-              <p className="py-6 font-medium">
+              <h1 className="text-5xl font-bold text-neutral">
+                Looking For work
+              </h1>
+              <p className="py-6 font-medium text-neutral">
                 We Will Help You Through The Hardest Part of Job Search
               </p>
-              <button className="btn btn-wide btn-success">
+              <button className="btn btn-wide btn-accent">
                 Create an Account
               </button>
               <CardSections_row2 />
@@ -266,7 +270,7 @@ function ContrastHero() {
   return (
     <>
       <div className="text-gray-900">
-        <div className="hero min-h-screen bg-green-500">
+        <div className="hero min-h-screen bg-primary">
           <div className="hero-content flex-col lg:flex-row-reverse m-32">
             <img src={contrast_svg1} alt="Analytics" className="w-3/4" />
             <div>
@@ -282,7 +286,7 @@ function ContrastHero() {
             </div>
           </div>
         </div>
-        <div className="hero min-h-screen bg-green-500">
+        <div className="hero min-h-screen bg-primary">
           <div className="hero-content flex-col lg:flex-row m-32">
             <img src={contrast_svg2} alt="Analytics" className="w-3/4" />
             <div>
@@ -304,23 +308,23 @@ function ContrastHero() {
             </div>
           </div>
         </div>
-        <div className="hero max-w-full h-4/6  bg-grey-500">
+        <div className="hero max-w-full h-4/6  bg-secondary">
           <div className="hero-content flex-col lg:flex-row-reverse m-32">
             <img src={contrast_svg3} alt="Analytics" className="w-3/4" />
             <div>
-              <h1 className="text-5xl font-bold text-right text-white ">
-                stuff
+              <h1 className="text-5xl font-bold text-neutral text-left  ">
+                Optimizer all in one
               </h1>
-              <p className="py-6 text-right text-white">
+              <p className="py-6 text-left text-neutral">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                 voluptatem aut a placeat nihil hic, harum quisquam tempore!
                 Quaerat perferendis quibusdam, quidem nihil et aliquam saepe
                 mollitia quasi repellat. Odit!
               </p>
-              <div className="flex justify-end">
+              <div className="flex justify-start">
                 <div>
-                  <button className="btn btn-outline btn-wide text-white ">
-                    Optimize Resume
+                  <button className="btn btn-outline btn-wide text-black ">
+                    Get Started
                   </button>
                 </div>
               </div>
@@ -335,7 +339,7 @@ function ContrastHero() {
 function Footer() {
   return (
     <>
-      <footer className="footer p-10 bg-black text-base-content">
+      <footer className="footer p-10 bg-primary text-secondary">
         <nav>
           <h6 className="footer-title">Platform</h6>
           <a className="link link-hover">Branding</a>
@@ -408,14 +412,14 @@ function Footer() {
 function ThinLinefooter() {
   return (
     <>
-      <footer className="footer footer-center p-10 bg-black text-primary-content">
+      <footer className="footer footer-center p-10 bg-primary text-secondary">
         <aside>
           <h1 className="font-bold text-7xl">What's Next</h1>
           <p className="font-semibold">
             Navigate Your Career Journey with JobSnapAI – Where Opportunities
             Meet Intelligence!
           </p>
-          <button className="btn btn-wide btn-outline btn-info m-3">
+          <button className="btn btn-wide btn-outline btn-secondary m-3">
             Try For free !{" "}
           </button>
         </aside>
