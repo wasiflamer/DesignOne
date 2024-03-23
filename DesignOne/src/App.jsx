@@ -6,6 +6,7 @@ import contrast_svg1 from "./assets/Dark _analytics-bro.svg";
 import contrast_svg2 from "./assets/Visual data-bro.svg";
 import contrast_svg3 from "./assets/Analysis.svg";
 import contrast_svg4 from "./assets/Software_integration-bro.svg";
+import HeroBackground from "./assets/hero_background-01.svg";
 
 function App() {
   return (
@@ -30,26 +31,24 @@ function HeroSection() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage:
-            "url(https://pattern8.com/images/pattern-thumbs/pattern8-pattern-44a.png)",
-          backgroundSize: "12vh",
+          backgroundImage: `url(${HeroBackground})`,
         }}
       >
         <div className="hero-content text-center">
           <div className="max-w-lg">
-            <h1 className="text-5xl font-bold text-primary">
+            <h1 className="text-5xl font-bold text-primary bg-white">
               Win your dream job
             </h1>
-            <h1 className="text-5xl font-bold text-neutral ">with JobSnap</h1>
-            <p className="py-6 font-medium text-neutral">
+            <h1 className="text-5xl font-bold text-neutral bg-white ">
+              With JobSnap
+            </h1>
+            <p className="py-6 font-medium text-neutral bg-white">
               Navigate Your Career Journey with JobSnap – Where Opportunities
               Meet Intelligence!
             </p>
             <label className="input input-bordered flex items-center gap-2 py-8">
               <input type="text" className="grow" placeholder="Your Email" />
-              <span className=" btn btn-accent rounded-s-badge ">
-                Start For Free
-              </span>
+              <span className=" btn btn-accent ">Start For Free</span>
             </label>
             <CardSections />
           </div>
@@ -177,8 +176,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end gap-2">
-        <a className="btn btn-white rounded-s-badge">Sign in</a>
-        <a className="btn btn-accent rounded-e-badge">Get Started</a>
+        <a className="btn btn-white">Sign in</a>
+        <a className="btn btn-accent">Get Started</a>
       </div>
     </div>
   );
